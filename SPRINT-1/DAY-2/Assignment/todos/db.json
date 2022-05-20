@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "model": "lenovo",
+      "year": "2022-02",
+      "os": "windows",
+      "height": "13",
+      "width": "12",
+      "price": "20000",
+      "id": 1
+    },
+    {
+      "model": "hp",
+      "year": "2022-03",
+      "os": "linux",
+      "height": "12",
+      "width": "18",
+      "price": "67000",
+      "id": 2
+    },
+    {
+      "model": "asus",
+      "year": "2022-11",
+      "os": "windows",
+      "height": "16",
+      "width": "15",
+      "price": "30000",
+      "id": 3
+    }
+  ]
+}
