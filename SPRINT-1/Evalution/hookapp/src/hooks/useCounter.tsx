@@ -2,11 +2,11 @@ import React from "react";
 export const useCounter = (init: number) => {
   const [value, usecounter1] = React.useState(init);
 
-  const increment = (x: number) => {
+  const inc = (x: number) => {
     usecounter1(value + x);
   };
 
-  const decrement = (x: number) => {
+  const dec = (x: number) => {
     usecounter1(value - x);
   };
 
@@ -14,5 +14,5 @@ export const useCounter = (init: number) => {
     usecounter1(x);
   };
 
-  return { value, increment, decrement, set };
+  return { value, inc, dec, set };
 };
