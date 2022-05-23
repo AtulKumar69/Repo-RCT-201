@@ -1,15 +1,15 @@
 import React from "react"
 export const useList = (array:any) => {
 
-    const[list1,list2]=React.useState(array)
+    const[list,list2]=React.useState(array)
 
     const push=(x:number)=>{
-        list1.push(x)
-        list2([...list1])
+        list.push(x)
+        list2([...list])
     }
     const pop=()=>{
-        list1.pop()
-        list2([...list1])
+        list.pop()
+        list2([...list])
     }
 
     const clear=()=>{
@@ -22,11 +22,11 @@ export const useList = (array:any) => {
 
     const map=(x:Function)=>{
         console.log(x)
-       let mydata=list1.map(x)
+       let mydata=list.map(x)
        list2(mydata)
     }
 
 
    let value1={push,pop,clear,reset,map}
-    return[list1,value1]
+    return[list,value1]
 };
