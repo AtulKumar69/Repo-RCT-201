@@ -1,7 +1,7 @@
 import React from "react"
-export const useList = (array:any) => {
+export const useList = (arr:any) => {
 
-    const[list,list2]=React.useState(array)
+    const[list,list2]=React.useState(arr)
 
     const push=(x:number)=>{
         list.push(x)
@@ -17,7 +17,7 @@ export const useList = (array:any) => {
     }
 
     const reset=()=>{
-        list2(array)
+        list2(arr)
     }
 
     const map=(x:Function)=>{

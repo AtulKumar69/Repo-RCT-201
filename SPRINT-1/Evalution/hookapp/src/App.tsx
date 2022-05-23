@@ -14,8 +14,8 @@ function App() {
       <button onClick={() => map((e: any) => e * 2)}>
         DOUBLE EVERY ELEMENT
       </button>
-      {list.map((ul: any) => (
-        <div key={ul}>{ul}</div>
+      {list.map((l: any) => (
+        <div key={l}>{l}</div>
       ))}
 
      <br/><br/>
@@ -24,7 +24,7 @@ function App() {
       <button onClick={() => decrement(1)}>Sub 1</button>
       <button onClick={() => decrement(4)}>Sub 4</button>
       <button onClick={() => set(100)}>Set counter to 100</button>
-      <h3>Output: {value}</h3>
+      <h3>Value: {value}</h3>
     </div>
   );
 }
