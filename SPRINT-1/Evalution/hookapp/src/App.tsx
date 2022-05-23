@@ -7,10 +7,10 @@ function App() {
   const { value, inc, dec, set } = useCounter(10);
   return (
     <div className="App">
-      <button onClick={() => push(list.length + 1)}>APPEND</button>
-      <button onClick={() => pop()}>POP</button>
-      <button onClick={() => clear()}>CLEAR</button>
-      <button onClick={() => reset()}>RESET</button>
+      <button onClick={() => push(list.length + 1)}>Append</button>
+      <button onClick={() => pop()}>pop</button>
+      <button onClick={() => clear()}>clear</button>
+      <button onClick={() => reset()}>reset</button>
       <button onClick={() => map((e: any) => e * 2)}>
         DOUBLE EVERY ELEMENT
       </button>
