@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 // import logo from './logo.svg';
-import { Memo } from './componet/Memo';
+import { Memo } from './component/Memo';
 
 import './App.css';
 
