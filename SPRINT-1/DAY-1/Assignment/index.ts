@@ -12,13 +12,13 @@ var subjects;
     subjects["physics"] = "physics";
     subjects["maths"] = "maths";
 })(subjects || (subjects = {}));
-var Teacher = [
+const Teacher = [
     { id: 6, name: 'Prabhanjan', subjet: subjects.physics, number_of_student: 12 },
     { id: 7, name: 'Arjun', subjet: subjects.chemistry, number_of_student: 15 },
     { id: 8, name: 'Albert', subjet: subjects.maths, number_of_student: 33 }
 ];
 // console.log(Teacher);
-var sorts = function (arr, a) {
+const sorts = function (arr, a) {
     for (var i = 1; i < arr.length; i++) {
         var j = i - 1;
         var sort1 = arr[i];
