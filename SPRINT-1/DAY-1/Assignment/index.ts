@@ -1,4 +1,4 @@
-var arr = [
+const arr = [
     { id: 1, name: 'Atul', age: 19, salary: 460000 },
     { id: 2, name: 'Ram', age: 20, salary: 600000 },
     { id: 3, name: 'Hari', age: 19, salary: 80000 },
