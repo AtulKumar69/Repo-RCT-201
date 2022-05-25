@@ -2,11 +2,11 @@ import { memo, useCallback} from "react"
   export  const Verify = (props:any)=>{
    
     
-     const {elem, setMemoup,memoup}= props
+     const {el, setMemoup,memoup}= props
     
-       const Atul = useCallback((elem:any)=>{
-        elem.verifly=true
-        console.log(elem)
+       const Atul = useCallback((el:any)=>{
+        el.verify=true
+        console.log(el)
         console.log(Atul,"fkdhsksg")
          setMemoup([...memoup])
        },[])
@@ -16,7 +16,7 @@ import { memo, useCallback} from "react"
   
     return (
         <>
-         <button onClick={()=>Atul(elem)}>Verify</button>
+         <button onClick={()=>Atul(el)}>Verify</button>
         </>
     )
 

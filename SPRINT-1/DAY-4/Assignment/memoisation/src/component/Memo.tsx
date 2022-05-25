@@ -55,17 +55,17 @@ export const Todo = ()=>{
          </form>
          </div>
          <div  style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gridTemplateRows:"auto",marginLeft:"-200px",width:"100%",gap:"20px"}}>
-             {memoup.map((elem:any)=>{
+             {memoup.map((el:any)=>{
                 return (
                     <>
-                    <div  key ={elem.id} style={{boxShadow:" rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px"}}> 
+                    <div  key ={el.id} style={{boxShadow:" rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px"}}> 
                     <div style={{display:"flex"}}>
-                       {elem.verifly ? <div style={{marginLeft:"20px",marginRight:"12px",width:"50px", height:"50px",backgroundColor:"red"}}></div>:""}
+                       {el.verifly ? <div style={{marginLeft:"20px",marginRight:"12px",width:"50px", height:"50px",backgroundColor:"red"}}></div>:""}
                         <div><h3>
-                        {elem.title}
+                        {el.title}
                             </h3>
-                                <h4>{elem.body}</h4>
-                                 <Datamemo key={Math.random()} elem={elem} setMemoup={setMemoup} memoup={memoup} /> 
+                                <h4>{el.body}</h4>
+                                 <Datamemo key={Math.random()} el={el} setMemoup={setMemoup} memoup={memoup} /> 
                                 
                                 </div>
                     
