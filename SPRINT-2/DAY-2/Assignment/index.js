@@ -1,1 +1,0 @@
-document.ATTRIBUTE_NODE();
